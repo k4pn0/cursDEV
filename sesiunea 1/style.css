@@ -1,0 +1,13 @@
+.block {
+    background-color: #fcb994; font-family: 'Times New Roman', Times, serif; font-size: x-large;
+}
+article {
+    text-align: center;
+}
+table {
+    vertical-align: middle;
+    text-align: center;
+}
+h2 {
+    color: #69072d; font-weight: 600;
+}

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Z-index </title>
-    <style>
-        img {
-            height: 90px;
-            float: right;
+        <style>
+            .positioned {
+                position:absolute;
+                top: 0px;
+                right: 0px;
+                border: 5px solid red;
+            }
+            .positionedMain {
+                position: relative;
+            }
 
-        }
+            div {
+                border: 2px solid orangered;
+                margin: 20px;
+                padding: 20px;
 
-        p {
-            clear: both;
-        }
-
-        div {
-            border: 2px solid green;
-        }
-
-        body {
-            color:red;
-        }
-    </style>
-
+            }
+        </style>
     </head>
     <body>
-        <h1>Exemplu pentru float</h1>
-        <p>
-            <div>
-                <img src="inima.gif" alt="">
+        <h1>Box model</h1>
+        <h1>This is a heading</h1>
+        <a href="longPage.html">Scroll</a>
+        <a href="image.html">link poza</a>
+        <a href="float.html">float</a>
+        <div>
+            <div class="positionedMain">
+                <p class="positioned">Continut paragraf</p>
             </div>
-        </p>
+        </div>
     </body>
-</html>
+    </html>

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
     <title>Pseudo</title>
     <style>
         a:visited {
             color: red;
         }
 
-        p::first-letter {
+        /* p::first-letter {
             color: green;
             font-size: 40px;
+        } */
+
+        p::after {
+            content: " this is the extra content";
+            color: blue;
+        }
+
+        p::before {
+            content: "this is added before ";
+            color: green;
         }
 
         a[target= "_blank"] {
@@ -20,6 +27,14 @@
         }
         [alt~="flower"] {
             border: 1px solid purple;
+        }
+
+        .target::selection {
+            color: yellow;
+        }
+
+        ::marker {
+            color: red;
         }
     </style>
 </head>
@@ -31,5 +46,14 @@
     <img src="falsa" alt="flower">
     <h4>Pseudo elemente</h4>
     <p>This is a paragraph</p>
+    <p class="target">This is a paragraph</p>
+    <ol>
+        <li>sare</li>
+        <li>zahar</li>
+        <li>faina</li>
+        <li>lapte</li>
+        <li>oua</li>
+        <div style="display: list-item;">pui dezosat</div>
+    </ol>
 </body>
 </html>
